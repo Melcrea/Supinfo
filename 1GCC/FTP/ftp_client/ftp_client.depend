@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1550296971 source:c:\users\clément\documents\a.sc.1\1gcc\projet\ftp_client\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"client.h"
+	"tk.h"
+	<winsock2.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+
+1549627140 c:\users\clément\documents\a.sc.1\1gcc\projet\ftp_client\tk.h
+
+1549550323 source:c:\users\clément\documents\a.sc.1\1gcc\projet\ftp_client\tk.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1549627232 source:c:\users\clément\documents\a.sc.1\1gcc\projet\ftp_client\client.c
+	"tk.h"
+
+1549535461 c:\users\clément\documents\a.sc.1\1gcc\projet\ftp_client\client.h
+

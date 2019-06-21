@@ -1,0 +1,1 @@
+You must to use the library "pygame" to launch game

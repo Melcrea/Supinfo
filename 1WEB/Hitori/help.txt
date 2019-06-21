@@ -1,0 +1,3 @@
+vous devez utiliser un IDE style Brackets pour faire fonctionner le site.
+Car le site lit des fichiers txt, il est donc nécessaire de créer un serveur
+local 

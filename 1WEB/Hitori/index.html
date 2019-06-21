@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hitori</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="title">鳥 HITORI 居</h1>
+    </header>
+    <section>
+      <h2 id="timer">Timer <span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span></h2>
+      <h3 id="rules_b">Rules (hovers to display)</h3>
+      <p id="rules_p">The purpose of the game is to "eliminate" cells, usually by coloring them in black, until there are no duplicates numbers in any row or column.</p>
+      <table id="board"></table>
+      <nav>
+        <a id="newB" class="navB" href="#"><img class="navicon" src="images/new-icon.png" alt="new" title="New"></a>
+        <a id="checkB" class="navB" href="#"><img class="navicon" src="images/check-icon.png" alt="check" title="Check"></a>
+        <a id="resetB" class="navB" href="#"><img class="navicon" src="images/restart-icon.png" alt="restart" title="Restart"></a>
+      </nav>
+    </section>
+    <footer>
+      <p id="copyright">Copyright - Clément MARTINEZ</p>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

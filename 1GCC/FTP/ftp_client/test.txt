@@ -1,0 +1,33 @@
+#include <string.h>
+
+void strCopyPart(char str[], char finalStr[], int beg, int end){
+    int len = end - beg;
+    for (int i=0; i<len; i++){
+        finalStr[i] = str[i+beg];
+    }
+    //printf("\tparam: %s\n", finalStr);
+    //return finalStr;
+}
+
+void analizeCmd(char *cmd[]){
+    char keyWord[8][10] = {"open", "help", "cd", "get", "ls", "put", "status", "quit"};
+    int amountParam[] = {1, 0, 1, 1, 0, 1, 0, 0};
+    int kwLen = sizeof(keyWord)/sizeof(keyWord[0]);
+    printf("Command Length: %d\n", strlen(cmd));
+    for (int i=0; i < kwLen; i++){
+        if (strlen(keyWord[i]) <= strlen(cmd)) {
+            printf("[%s] size: %d", keyWord[i], strlen(keyWord[i]));
+
+            char result = strstr(cmd, keyWord[i]);
+            if (result != NULL) {
+                printf("\t(oui)");
+                int begParam = strlen(keyWord[i])+1, endParam = strlen(cmd)+1;
+                char param[endParam - begParam];
+                strCopyPart(cmd, param, begParam, endParam);
+                printf("\tparam: %s\n", param);
+            } else{
+                printf("\t(non)\n");
+            }
+        }
+    }
+}
